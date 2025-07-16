@@ -1,4 +1,177 @@
 <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Insanit Studio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    header, section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeIn 1.2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo {
+      max-width: 500px;
+      width: 90%;
+      margin: 30px auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
+    }
+
+    /* Nova logo no topo esquerdo */
+    .corner-logo {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 60px;
+      height: auto;
+      z-index: 1000;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin-bottom: 10px;
+    }
+
+    .contact a {
+      color: #58a6ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .social {
+      margin-top: 20px;
+    }
+
+    .social a {
+      display: inline-block;
+      margin: 0 10px;
+      color: #fff;
+      transition: transform 0.3s ease;
+    }
+
+    .social a:hover {
+      transform: scale(1.2);
+    }
+
+    .social img {
+      width: 30px;
+      height: 30px;
+      filter: brightness(0) invert(1);
+    }
+
+    .invite-link {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #5865F2;
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(88, 101, 242, 0.4);
+      transition: background 0.3s ease;
+      z-index: 999;
+    }
+
+    .invite-link:hover {
+      background-color: #4752c4;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      background: #222;
+      color: #fff;
+      border: none;
+      padding: 10px 14px;
+      font-size: 14px;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+      transition: background 0.3s ease;
+      z-index: 998;
+    }
+
+    .back-to-top:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nova Logo no canto superior esquerdo -->
+  <img src="coloque-o-caminho-da-imagem-aqui.jpg" alt="Insanit Studio" class="corner-logo" />
+
+  <!-- Hero Section -->
+  <header id="topo">
+    <img src="insanit-logo-novo.png" alt="Insanit Studio" class="logo" />
+    <h1>Design é impacto.</h1>
+    <p>Transformamos ideias em experiências visuais marcantes. Seja para jogos, branding ou mídia digital — entregamos com presença e personalidade.</p>
+  </header>
+
+  <!-- Contato -->
+  <section class="contact">
+    <h2>Contato</h2>
+    <p>Quer iniciar um projeto ou trocar uma ideia?</p>
+    <p>Envie um e-mail para <a href="mailto:silvahnando373@gmail.com">silvahnando373@gmail.com</a></p>
+
+    <div class="social">
+      <a href="https://www.instagram.com/olf.svxis?igsh=OHJteW52bXFnYXdt" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+      </a>
+    </div>
+  </section>
+
+  <!-- Botão Fixo de Convite -->
+  <a href="https://discord.gg/fEtqGTFgJN" class="invite-link" target="_blank">Convide</a>
+
+  <!-- Botão de Voltar ao Topo -->
+  <a href="#topo">
+    <button class="back-to-top">↑ Topo</button>
+  </a>
+
+</body>
+</html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
